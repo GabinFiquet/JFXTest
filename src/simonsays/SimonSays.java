@@ -7,8 +7,8 @@ package simonsays;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
@@ -19,7 +19,7 @@ public class SimonSays extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        AnchorPane root = FXMLLoader.<AnchorPane>load(getClass().getResource("FXMLDocument.fxml"));
         Couleur color = new Couleur();
         root.getChildren().add(color);
         
